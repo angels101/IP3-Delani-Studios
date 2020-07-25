@@ -1,2 +1,16 @@
 /*----google favorite font of choice----*/
-@import url(https://fonts.google.com/specimen/Charm?sidebar.open&selection.family=Charm:wght@700)
+@import url(https://fonts.google.com/specimen/Charm?sidebar.open&selection.family=Charm:wght@700);
+
+        #body {
+            font-family: 'Tangerine' serif;
+            font-size: 48px;
+        }
+    .parent {
+        position: relative;
+    }
+    .over-img{
+position: absolute;
+top: 80%;
+left: 20;
+    }
+    
