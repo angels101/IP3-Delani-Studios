@@ -21,4 +21,8 @@ left: 20;
           column-count: 8;
         }
       }
-    
+    .corousel-inner {
+        background-image: url(/img/backgrounds/h_img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
