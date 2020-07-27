@@ -21,8 +21,56 @@ left: 20;
           column-count: 8;
         }
       }
-    .bg-fluid {
-        background-image: url(/img/backgrounds/h_img.jpg);
-        background-size: cover;
-        background-position: center;
-    }
+    .parent{
+        background: url(/img/backgrounds/h_img.jpg);
+        height: 1071px; /* You must set a specified height */
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+ background-size: cover; /* Resize the background image to cover the entire container */
+        
+        
+        }
+        .mouseimg{
+            background: url(/img/mouse_click.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+        
+        }
+        .logoimg{
+            background: url(/img/logo/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: center;
+
+            
+
+        }
+        .display-text{
+            text-align: center;
+            text-shadow: 5rem;
+            background-image: url(/img/backgrounds/h_img.jpg);
+            border: solid 3px #d3fcf5c7;
+            position: relative; 
+            color: white;
+            background-size: cover;
+            background-position: center;
+            padding: 110px;
+            font-size: 24px;
+        }
+        .display-4 {
+            text-emphasis: shadow 3434px;
+            text-shadow: rgb(0, 0, 0);
+            text-shadow: inherit 4;
+
+            }
+
+            .carousel-item {
+                color: white;
+            
+
+            }
+            .display {
+                text-align: center;
+
+            }
