@@ -22,43 +22,48 @@
         
 
     <!--Navigation Bar-->
-     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <button class="navbar-toggle" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-        <span class="navbar-toggle-icon"></span>
-    </button> 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">WHAT WE DO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
-            </li>
-        </ul>
-    </div>       
+            <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggle-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">WHAT WE DO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>       
+        </div>
+    </nav>
 
-    </div>
-</nav>
- <div class="container-fluid">
+
+    <!--homepage-->
+<!div class="container-fluid">
     
         <div class="header">
+            <div class="carousel-caption d-none d-md-block"></div>
             <div class="display-text">
+            
               <img src="img/logo/logo.png" alt="logo">
                     <h1 class="diplay-2">WELCOME</h1>
            
@@ -142,6 +147,7 @@
                                    <h3>DESIGN</h3>
                                 </div>   
                             </div>
+                            <div id ="image"
                              <div class="col-xs-12 col-sm-6 col-md-4">
                                 <img src="img/services_icons/dev_icon.png">
                                     
@@ -223,7 +229,7 @@
         <img class="card-img-top" src="img/portfolio/work4.jpg">
     </div>
 </div>
-</div---->
+</div>
 <hr class="my-4">
 
 <div class="container-fluid padding">
@@ -231,6 +237,8 @@
       <div class="col-12">
           <h2>PORTIFOLIO</h2>
       </div> 
+    </div>
+      <div id</div>
       <div class="cards-columns">
         <img src="img/portfolio/work4.jpg" class="card-img-top" alt="">
     </div>
@@ -265,31 +273,46 @@
     <div class="row text-center padding">
         
       <div class="col-12">
+          <div id="hero-image">
+          <img src="img/backgrounds/s_image.jpg"
           
           <h2>CONTACT US</h2>
        
       
-    <form>
-    <div class="form-row align-items-center">
-      <div class="col-auto">
-        <div class="img22">
-        <label class="sr-only" for="inlineFormInput">Name</label>
-        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Name....">
-    </div>
+          <h2>Contact us</h2>
+       
+              <form id="myForm" >
+                  <div style="display: flex !important;">  
+                      <div class="form-group">
+                          <input name="name" id="name" class="form-control" type="text" placeholder="Enter name" required>
+                   </div>
+                    <div class="form-group" >
+                     <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                    </div>
+                   <div class="form-group">
+                  <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="your message here ..." rows="10"></textarea>
+                  </div>
+                  <button id="submit" class="btn btn-default" onclick="myMessage() ; clearForm()" type="button">Submit form</button>  
+                </form>
+            <h5 id="popUp"></h5>
         </div>
     </div>
-</div> 
+    </div>
+
+</div>
+
 
       <hr class="my-4">
       
 <!-----Connect-->
 
 <div class="container-fluid padding">
-<div class="row text-center padding">
+ <div class="row text-center padding">
   <div class="col-12">
       <h2>Connect</h2>
-  </div> 
-  <div class="col-12 social padding" >
+   </div> 
+    <div class="col-12 social padding" >
       <!---a href="https://www.facebook.com/angelscodex101"><i class="fab fa-facebook"></i></a>
         <a href="https://twitter.com/arthur_angels"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-google-plus-g "></i></a>
@@ -303,8 +326,8 @@
       <img src="img/social_icons/stumble_upon.png"><a href="https://www.instagram.com/arthurngari/"</a>
       <img src="img/social_icons/you_tube.png"><a href="https://www.instagram.com/arthurngari/"</a>
 
+     </div>
 </div>
-  </div>
 </div>
 
 <hr class="my-4">

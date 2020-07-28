@@ -13,18 +13,12 @@
 
 
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-}
-@media (max-width: 768px) {
-
-}
-@media (max-width: 576px) {
-
-}
 
 
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
 .mouse-click{
     padding: 100px;
 }
@@ -49,7 +43,7 @@ left: 20;
           column-count: 8;
         }
       }
-    .parent{
+    parent{
         background: url(/img/backgrounds/h_img.jpg);
         height: 1071px; /* You must set a specified height */
  background-position: center; /* Center the image */
@@ -79,7 +73,7 @@ left: 20;
             text-shadow: 5rem;
             background-image: url(/img/backgrounds/h_img.jpg);
             /*border: solid 3px #d3fcf5c7;*//
-            position: relative; 
+        
             color: white;
             background-size: cover;
             background-position: center;
