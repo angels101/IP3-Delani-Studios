@@ -74,3 +74,12 @@ left: 20;
                 text-align: center;
 
             }
+            .img22 {
+                background-image: url(/img/backgrounds/c_image.jpg);
+                background-size: cover;
+                background-size: cover;
+                  padding: 320px;  
+                    width: inherit;
+                    height: 1230;
+                    
+            }
