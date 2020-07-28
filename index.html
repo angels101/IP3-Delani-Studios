@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Delani Studios</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-migrate-3.3.1.js"></script>
     <script  src="css/bootstrap.css"></script>
@@ -17,17 +21,17 @@
     <body>
         
 
-    <!---Navigation Bar-->
-<!--nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-         <button class="navbar-toggle" type="button" data-toggle="collapse"
+    <!--Navigation Bar-->
+     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggle" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
         <span class="navbar-toggle-icon"></span>
     </button> 
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-item">
+                <a class="nav-item active">
                     <a class="nav-link" href="#">HOME</a>
             </li>
             <li class="nav-item">
@@ -48,17 +52,11 @@
             </li>
         </ul>
     </div>       
-.hero-image {
- background-image: url("photographer.jpg"); /* The image used */
- background-color: #CCCCCC; /* Used if the image is unavailable */
- height: 500px; /* You must set a specified height */
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- background-size: cover; /* Resize the background image to cover the entire container */
-}
+
     </div>
-</nav--->
- 
+</nav>
+ <div class="container-fluid">
+    
         <div class="header">
             <div class="display-text">
               <img src="img/logo/logo.png" alt="logo">
@@ -67,30 +65,28 @@
                      <h3>TO DELANI STUDIO</h3>
            
                     <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
-                       <br>
-               <img src="img/mouse_click.png" alt="mouse_click">
 
                
+               <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+               <button type="button" class="btn btn-outline-light btn-lg">DELANI</button>
+               <br>
+            <!--image slide--->
+               <div id="slides" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-toggle="#slides" data-slide-to="0" class="active"></li>
+                    <li data-toggle="#slides" data-slide-to="1" class="active"></li>
+                    <li data-toggle="#slides" data-slide-to="2" class="active"></li>
+                </ul>
+            
+                <br>
+                <div class="mouse-click">
+                <img src="img/mouse_click.png" alt="mouse_click">
+            </div>
+            </div>
+            </div>
             </div>
         </div>
-    
-    
-
-    <!--Jumbotro--->
- <!--div class="container-fluid">
- <div class="row jumbotron">
-     
-    
-         <P class="lead">AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</P>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-2">
-         <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">The Delani</button></a>
-     </div>
-
-</div> 
-</div--->
-    
-<hr class="my-4">
+       
 
     <!---- Welcome Section-->
        <div class="container-fluid padding">
@@ -271,8 +267,7 @@
       <div class="col-12">
           
           <h2>CONTACT US</h2>
-        </div>
-      </div> 
+       
       
     <form>
     <div class="form-row align-items-center">
@@ -282,17 +277,23 @@
         <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Name....">
     </div>
         </div>
+    </div>
+</div> 
 
       <hr class="my-4">
       
 <!-----Connect-->
-<hr class="my-4">
+
 <div class="container-fluid padding">
 <div class="row text-center padding">
   <div class="col-12">
       <h2>Connect</h2>
   </div> 
   <div class="col-12 social padding" >
+      <a href="https://www.facebook.com/angelscodex101"><i class="fab fa-facebook"><i></i></a>
+        <a href="https://twitter.com/arthur_angels"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g "></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
       <img src="img/social_icons/twitter.png"></a>
       <img src="img/social_icons/behance.png"></a>
       <img src="img/social_icons/facebook.png"></a>
