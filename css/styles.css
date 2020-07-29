@@ -70,8 +70,8 @@ left: 20;
         }
         .display-text{
             text-align: center;
-        color: rgb(248, 248, 248);
-            background-image: url(/img/backgrounds/h_img.jpg);
+    
+            
             /*border: solid 3px #d3fcf5c7;*/
         height: ;
             
@@ -100,9 +100,8 @@ left: 20;
                     height: 1230;
                     
             }
-            .hero-image {
-                background-image: url(
-                
+            #heroimg{
+                    background-image: url("/img/backgrounds/h_img.jpg");
                 
                 background-position: center; /* Center the image */
                 background-repeat: no-repeat; /* Do not repeat the image */
