@@ -70,15 +70,11 @@ left: 20;
         }
         .display-text{
             text-align: center;
-            text-shadow: 5rem;
+        color: rgb(248, 248, 248);
             background-image: url(/img/backgrounds/h_img.jpg);
             /*border: solid 3px #d3fcf5c7;*//
         
-            color: white;
-            background-size: cover;
-            background-position: center;
-            padding: 110px;
-            font-size: 24px;
+            
         }
         .display-4 {
             text-emphasis: shadow 3434px;
@@ -105,7 +101,7 @@ left: 20;
                     
             }
             .hero-image {
-                background-image: url("/img/backgrounds/s_image.jpg /* The  */
+                background-image: url(
                 background-color: #CCCCCC; /* Used if the image is unavailable */
                 height: 500px; /* You must set a specified height */
                 background-position: center; /* Center the image */
@@ -135,6 +131,6 @@ left: 20;
 
 
 
-                .footer {
-                    text-align: center;
+                .footer{
+                    background-color: text-align: float: vertical-align: margin-bottom: ;;;;;
                 }
