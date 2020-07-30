@@ -1,4 +1,4 @@
-##  Akan Naming System
+##  DELANI STUDIO
 This repository contains code for Delani Studio.
 ### By Arthur Ngari
 ## Description.
