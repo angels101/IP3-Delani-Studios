@@ -2,151 +2,41 @@
 @import url(https://fonts.google.com/specimen/Charm?sidebar.open&selection.family=Charm:wght@700);
 
 
-/*---- Bootstrap Padding Fix --*/
-[class*="col-"] {
+
+
+.contact{
+    text-align: center;
+}
+.fun{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.gif{
+    max-width: 100%;
+}
+.form {
+    background-image: url("/img/backgrounds/c_image.jpg");
+    background-image: image("/img");
+}
+
+.social a{
+    font-size: 3em;
     padding: 1rem;
 }
-
-
-
-
-
-
-
-
-
-.navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-  }
-.mouse-click{
-    padding: 100px;
+.col-12 social padding:hover,{
+    color: #0453fgr;
+}
+.footer {
+    background-color: #f5f3f3;
+    color: #222121;
+    padding-top: .3rem;
+    text-align: center;
 }
 
-        #body {
-            font-family: 'Tangerine' serif;
-            font-size: 48px;
-        }
-    .parent {
-        position: relative;
-    }
-    .over-img{
-position: absolute;
-top: 80%;
-left: 20;
-    }
-    .card-columns {
-        @include media-breakpoint-only(lg) {
-          column-count: 9;
-        }
-        @include media-breakpoint-only(xl) {
-          column-count: 8;
-        }
-      }
-    parent{
-        background: url(/img/backgrounds/h_img.jpg);
-        height: 1071px; /* You must set a specified height */
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- background-size: cover; /* Resize the background image to cover the entire container */
+
+
+
+
+
+
         
-        
-        }
-        .mouseimg{
-            background: url(/img/mouse_click.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-position-y: bottom;
-        
-        }
-        .logoimg{
-            background: url(/img/logo/logo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-position-y: center;
-
-            
-
-        }
-        .display-text{
-            text-align: center;
-    
-            
-            /*border: solid 3px #d3fcf5c7;*/
-        height: ;
-            
-        }
-        .display-4 {
-            text-emphasis: shadow 3434px;
-            text-shadow: rgb(0, 0, 0);
-            text-shadow: inherit 4;
-
-            }
-
-            .carousel-item {
-                color: white;
-            
-
-            }
-            .display {
-                text-align: center;
-
-            }
-            .img22 {
-                background-image: url(/img/backgrounds/c_image.jpg);
-                background-size: cover;
-                 padding: 320px;  
-                    width: inherit;
-                    height: 1230;
-                    
-            }
-            #heroimg{
-                    background-image: url("/img/backgrounds/h_img.jpg");
-                
-                background-position: center; /* Center the image */
-                background-repeat: no-repeat; /* Do not repeat the image */
-                background-size: cover; /* Resize the background image to cover the entire container */
-               }
-               
-            
-                
-               .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                transition: .5s ease;
-                background-color: #008CBA;
-
-
-#first_element {
-    position: relative;
-    left: 30px; 
-  top: 70px; 
-  width: 500px; 
-
-  
-  font-size: 24px; 
-  text-align: cente
-}
-#second_element { 
-    position: relative; 
-    width: 500px; 
-    
-    
-    font-size: 24px; 
-    text-align: center; 
-  }
-
-
-
-
-
-
-                .footer{
-                    background-color: text-align: float: vertical-align: margin-bottom: ;;;;;
-                }
