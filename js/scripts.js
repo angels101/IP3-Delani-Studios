@@ -4,9 +4,40 @@ $(function () {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
+/*----Three Column section-----*/
+$("div.tumble").toggleClass("bounce");
+$("div.tumble").toggleClass("bounce");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
   $( "li" ).add( "p" ).css( "background-color", "red" );
   $( "li" ).add( document.getElementsByTagName( "p" )[ 0 ] )
