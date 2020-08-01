@@ -30,5 +30,5 @@ Incase of any contibution and feedback, feel free to doso by visiting [Thislink]
                       </br>
 #### License
   [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
-  Copyright © 2020 AngelsCodex.inc
+  Copyright © 2020 Delani Studios.inc
 
