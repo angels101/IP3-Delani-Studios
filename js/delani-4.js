@@ -183,7 +183,7 @@ function _onCardMove(track) {
         init: init
     };
 
-})(window); 
+};(window); 
 
 window.onload = delani.init;
     }
