@@ -124,16 +124,16 @@
  .card {
      position: relative;
      float: left;
-     width: 29%;
+     width: 21%;
      height: 0;
-     margin: 2%;
+     margin: 0.5%;
      padding-bottom: 20%;
  }
 
  .card_container {
      position: fixed;
      top: 0;
-     left: 0;
+     left: 5;
      overflow-x: hidden;
      overflow-y: auto;
      width: 100%;

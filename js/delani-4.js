@@ -1,5 +1,7 @@
-use strict';
-var delani =(function(window, undefined){
+'use strict';
+var delani = (function(window, undefined){
+
+    
   var SELECTORS = {
       pattern: '.pattern',
       card: '.card',
@@ -32,6 +34,7 @@ var delani =(function(window, undefined){
     }).svg();
 
     _mapPolygons(pattern) {
+
         $(SELECTORS.pattern).append(pattern);
 
         pollyonMap.paths = [].slice.call(pattern.childNodes);
@@ -57,11 +60,11 @@ var delani =(function(window, undefined){
 
     function _bindCards(){
 
-        var eelments = $( SELECTORS.card);
+        var elements = $(SELECTORS.card);
 
-        $.each(elements, function(card, i){
+        $.each(elements, function(card, i) {
 
-            var instant = new Card (i, card);
+            var instance = new Card (i, card);
 
 
             layout[i] = {
@@ -87,23 +90,32 @@ var delani =(function(window, undefined){
             var tweenOtherCards = _showHideOtherCards (id);
 
             if (!card.isOpen) {
+
+
+
                 _setPatternBgImg(e.target);
 
 
                 sequence.add(tweenOtherCards);
                 sequence.add(card.openCard(_onCardMove), 0);
+
+
             } else {
 
 
                 var closeCard = card.closeCard();
-                var position = closeCard.duration(); * 0.8;
+                var position = closeCard.duration() * 0.8;
 
                 sequence.add(closeCard);
                 sequence.add(tweenOtherCards, position);
             }
+
+
             sequence.play();
         
         };
+
+
         function _showHideOtherCards(id)
 
         var TL = new TimelineLite;
@@ -112,16 +124,18 @@ var delani =(function(window, undefined){
 
         for( var i in layout) {
 
-            var card =layout[i].card;
+            var card = layout[i].card;
 
-            if (card.id !== id && ! selectedCard.isOpen){
-                TL.add(card.showCard(), 0);
+            if (card.id !== id && ! selectedCard.isOpen) {
+                TL.add(card.hideCard(), 0);
             }
+            if (card.id !== id && ! selectedCard.isOpen) {
+                TL.add(card.showCard(), 0);
         }
-    
-return TL;
+    }
+      return TL;
 
-    };
+};
 
 function _setPatternBgImg(image){
 
@@ -137,12 +151,13 @@ function _onCardMove(track) {
         y: track.y
     };
 
-    polygonMap.points.forEach(function(point, i){
+    polygonMap.points.forEach(function(point, i) {
 
-        if(_detectPointInCircle(point, redius, center)) {
-         $(polygonMap.paths[i]).attr('class', CLASSES.polygon + ' ' + CLASSES.polygonHidden)
+        if(_detectPointInCircle(point, radius, center)) {
+
+         $(polygonMap.paths[i]).attr('class', CLASSES.polygon + ' ' + CLASSES.polygonHidden);
         }else {
-            $(polygonMap.paths[i].attr('class', CLASSES.polygon);
+            $(polygonMap.paths[i]).attr('class', CLASSES.polygon);
 
         }
     });
@@ -154,7 +169,7 @@ function _onCardMove(track) {
 
 
         var xc = center.x;
-        var yc =center.y; 
+        var yc = center.y; 
 
         var d = radius * radius;
 
@@ -169,7 +184,8 @@ function _onCardMove(track) {
     };
 
 })(window); 
-window.onload = delani-4.init;
+
+window.onload = delani.init;
     }
    }
 })
