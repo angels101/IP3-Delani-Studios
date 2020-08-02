@@ -23,8 +23,8 @@
     font-size: 3em;
     padding: 1rem;
 }
-.col-12 social padding:hover,
-{ color = #0453fgr;
+.col-12 social padding:hover, { 
+    color = #0453fgr;
 }
 .footer {
     background-color: #f5f3f3;
@@ -33,7 +33,20 @@
     text-align: center;
 }
 
+.content-before {
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    color: #fff
+}
 
+.content-after {
+    display: none;
+    font-size: 14px;
+    text-align: left;
+    line-height: 16px;
+    opacity: 0;
+}
 
 /* cards */
 

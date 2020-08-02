@@ -4,10 +4,18 @@ $(function () {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
-/*----Three Column section-----*/
-$("div.tumble").toggleClass("bounce");
-$("div.tumble").toggleClass("bounce");
+/*----Three Column section-----*/ 
+$(document).ready(function() {
 
+
+    $(".content-box").click(function(){
+        $(".content-box").animate({
+            width:'+=500px',
+           height: '+=300px'
+        }, 1000);
+        $(".content-after").show().animate({opacity: '1'}, 3000);
+    });
+});
 
 
 
