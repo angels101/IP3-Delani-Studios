@@ -28,7 +28,41 @@
 
 
     <!--Navigation Bar-->
-    <nav bar <!--homepage-->
+     <!--Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+        <span class="navbar-toggle-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">
+                    <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">
+                    <a class="nav-link" href="#">WHAT WE DO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+        </ul>
+    </div>       
+    </div>
+</nav>
+    <nav bar <!-----homepage-->
 
         <img src="img/backgrounds/h_img.jpg">
         <div class="carousel-caption d-none d-md-block">
@@ -42,8 +76,9 @@
 
             <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
             <button type="button" class="btn btn-outline-light btn-lg">DELANI</button>
-            <br>
+        </br>
             <!--image slide--->
+        </br>
             <div id="slides" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-toggle="#slides" data-slide-to="0" class="active"></li>
@@ -51,7 +86,7 @@
                     <li data-toggle="#slides" data-slide-to="2" class="active"></li>
                 </ul>
 
-                <br>
+            </br>
                 <div class="mouse-click">
                     <img src="img/mouse_click.png"></a>
                 </div>
@@ -108,38 +143,40 @@
         <br>
 
         <!---The Three column Section-->
+        <hr class="my-4">
 
-
-            <div class="container-fluid padding">
-                <div class="content-box">
-                    <p class="content-before">
-                <div class="row text-center padding">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        
-                
-                        <img src="img/services_icons/design_icon.png"></p>
-                        
-                        <h3>DESIGN</h3>
-                        <p class="content-after">Design is a very crucial part of Delani studios.Design everything from stationery,
-                             flyers, and posters to brochures, annual reports, magazines, and books. With professional
-                              layout and typesetting tools, 
-                            you can create multicolumn pages that feature stylish typography and rich graphics, images, and tables.</p>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-
-                        <img src="img/services_icons/dev_icon.png">
-                        <h3>DEVELOPMENT</h3>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img src="img/services_icons/product_icon.png">
-                        <h3>PRODUCT MANAGEMENT</h3>
-                    </div>
-                </di>
+        <div class="section4">
+            <h4>WHAT WE DO</h4>
+            <div class="whatwedo>">
+            <div class="row toggles">
+              <div class="col-md-4 design">
+                <div id="hidden-design">
+                <img class="toggle" src="img/services_icons/design_icon.png" alt="a design logo">
+                </div>
+                <h5>DESIGN</h5>
+                <p id="shown-design" class="toggle">
+                  Our design practice offers a full range of services<br>including brand strategy,interaction and visual design<br>and user experience testing.<br>Throughout your project,our designers create and<br>implement visual design and workflows,solicit users<br>feedback and work with you to make sure what gets built<br>is what is needed.
+                </p>
+              </div>
+              <div class="col-md-4 development">
+                <div id="hidden-development">
+                <img class="toggle1" src="img/services_icons/dev_icon.png" alt="a development logo">
+                </div>
+                <h5>DEVELOPMENT</h5>
+                <p id="shown-development" class="toggle1">
+                  All engineers are fluent in the latest enterprise ,mobile<br>and webdevelopment technologies.<br>They collaborate with your team to write and improve<br>code on a daily basis,using proven practices such as<br>test-driven development and pair programming.
+                </p>
+              </div>
+              <div class="col-md-4 product">
+                <div id="hidden-product">
+                <img class="toggle2" src="img/services_icons/product_icon.png" alt="a products icon">
+                </div>
+                <h5>PRODUCT MANAGEMENT</h5>
+                <p id="shown-product" class="toggle2">
+                  Planning and development is iterative.Because we are<br>constantly coding and testing,the products we build are<br>constantly always ready to go live.<br>This iterative process allows for changes as businesses<br>requirments evolve.
+                </p>
+              </div>
             </div>
-
-            </div>
-
 
 
             <hr class="my-4">
@@ -167,7 +204,7 @@
 
             <!----The Portifolio Section-->
 
-            <div class="delani-4">
+            <!---div class="delani-4">
                 <div class="container">
                     <div class="content">
                         <div class="pattern pattern--hidden"></div>
@@ -192,7 +229,7 @@
                                         </div>
                                         <div class="card_copy">
                                             <div class="meta">
-                                                <img class="meta_avatar" src="/img/portfolio/lokin.gif alt="lokin">
+                                                <img class="meta_avatar" src="/img/portfolio/author.ico" alt="author">
                                                 <span class="meta_portfolio">Arthur</span>
                                                 <span class="meta_portfolio">Arthur</span>
                                             </div>
@@ -224,22 +261,22 @@
                                         </div>
                                         <div class="card_copy">
                                             <div class="meta">
-                                                <img class="meta_avatar" src="img/portfolio/lokin.gif alt="
+                                                <img class="meta_avatar" src="img/portfolio/author.ico" alt="author"
                                                     portfolio" />
                                                 <span class="meta_author">Arthur</span>
                                                 <span class="meta_author">Arthur</span>
                                             </div>
                                             <P>djhjshfjhsdjfhgsdjhfksdhfkjshdkfhksddddd
-                                            <p>
+                                            </p>
                                                 139415874857438573476943769734967943769376976
-                                            </p>ddddddddddddddddddddddddddddddddddjhjjhs</P>
+                                            <p>ddddddddddddddddddddddddddddddddddjhjjhs</P>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!---card-->
-                        <div class="card">
+                        <!--div class="card">
                             <div class="card_container card_container--closed">
                                 <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                                     <defs>
@@ -258,21 +295,21 @@
                                     </div>
                                     <div class="card_copy">
                                         <div class="meta">
-                                            <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" lokin">
-                                            <span class="meta_author">Arthur</span>
+                                            <img class="meta_avatar" src="img/portfolio/author.ico" alt="author">
+                                            <span class="meta_portfolio">Arthur</span>
                                             <span class="meta_author">Arthur</span>
                                         </div>
                                         <P>djhjshfjhsdjfhgsdjhfksdhfkjshdkfhksddddd
-                                        <p>
+                                        </p>
                                             139415874857438573476943769734967943769376976
-                                        </p>ddddddddddddddddddddddddddddddddddjhjjhs</P>
+                                        <p>ddddddddddddddddddddddddddddddddddjhjjhs</P>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!------card-->
-                    <div class="card">
+                    <!-1-----card-->
+                    <!---div class="card">
                         <div class="card_container card_container--closed">
                             <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                                 <defs>
@@ -291,7 +328,7 @@
                                 </div>
                                 <div class="card_copy">
                                     <div class="meta">
-                                        <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" portfolio">
+                                        <img class="meta_avatar" src="img/portfolio/author.ico" alt="portfolio">
                                         <span class="meta_author">Arthur</span>
                                         <span class="meta_author">Arthur</span>
                                     </div>
@@ -304,8 +341,8 @@
                         </div>
                     </div>
                 </div>
-                <!---card-->
-                <div class="card">
+                <!------card-->
+                <!---div class="card">
                     <div class="card_container card_container--closed">
                         <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                             <defs>
@@ -324,7 +361,7 @@
                             </div>
                             <div class="card_copy">
                                 <div class="meta">
-                                    <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" portfolio">
+                                    <img class="meta_avatar" src="img/portfolio/author.ico" alt="author">
                                     <span class="meta_author">Arthur</span>
                                     <span class="meta_author">Arthur</span>
                                 </div>
@@ -338,7 +375,7 @@
                 </div>
             </div>
             <!---card-->
-            <div class="card">
+            <!--div class="card">
                 <div class="card_container card_container--closed">
                     <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                         <defs>
@@ -357,7 +394,7 @@
                         </div>
                         <div class="card_copy">
                             <div class="meta">
-                                <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" portfolio">
+                                <img class="meta_avatar" src="img/portfolio/author.ico" alt="author">
                                 <span class="meta_author">Arthur</span>
                                 <span class="meta_author">Arthur</span>
                             </div>
@@ -371,7 +408,7 @@
             </div>
         </div>
         <!---card-->
-        <div class="card">
+        <!--div class="card">
             <div class="card_container card_container--closed">
                 <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                     <defs>
@@ -390,7 +427,7 @@
                     </div>
                     <div class="card_copy">
                         <div class="meta">
-                            <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" portfolio">
+                            <img class="meta_avatar" src="img/portfolio/author.ico" alt="author">
                             <span class="meta_author">Arthur</span>
                             <span class="meta_author">Arthur</span>
                         </div>
@@ -405,7 +442,7 @@
         </div>
         <!---card-->
 
-        <div class="card">
+        <!---div class="card">
             <div class="card_container card_container--closed">
                 <svg class="card_image" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                     <defs>
@@ -424,7 +461,7 @@
                     </div>
                     <div class="card_copy">
                         <div class="meta">
-                            <img class="meta_avatar" src="img/portfolio/lokin.gif alt=" portfolio">
+                            <img class="meta_avatar" src="img/portfolio/author.ico" alt="portfolio">
                             <span class="meta_author">Arthur Ngari</span>
                             <span class="meta_author">Arthur</span>
                         </div>
@@ -437,15 +474,56 @@
             </div>
         </div>
         </div>
-        <!---card-->
-        </div>
-        <!------wrapper-->
-        </div>
-        <!-----content-->
-        </div>
+        <!1---card-->
+        <!--/div>
+        <!-------1--wrapper-->
+        <!----/div>
+        <!-------content-->
+        <!----div----->
         <!----container-->
 
-
+<!--section 5--->
+<div class="section5">
+    <p>PORTFOLIO</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 cruiser">
+          <img src="./img/portfolio/work4.jpg" class="img-fluid work-img"> 
+          <p id="j1">Dark matter project</p>
+        </div>
+        <div class="col-md-3 cruiser1">
+          <img src="./img/portfolio/work3.jpg" class="img-fluid work-img">
+          <p id="j2">The Angels project</p>
+        </div>
+          <div class="col-md-3 cruiser2">
+            <img src="./img/portfolio/work2.jpg" class="img-fluid work-img ">
+            <p id="j3">brown hydrants project</p>
+          </div>
+          <div class="col-md-3 cruiser3">
+            <img src="./img/portfolio/work1.jpg" class="img-fluid work-img">
+            <p id="j4">Jim query collaborators project</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 cruiser4">
+          <img src="./img/portfolio/work5.jpg" class="img-fluid work-img">
+          <p id="j5">Have a good day Movie</p>
+        </div>
+        <div class="col-md-3 cruiser5">
+          <img src="./img/portfolio/work6.jpg" class="img-fluid work-img">
+          <p id="j6">Welsh Grey project</p>
+        </div>
+        <div class="col-md-3 cruiser6">
+          <img src="./img/portfolio/work7.jpg" class="img-fluid work-img">
+          <p id="j7">Burned Out project</p>
+        </div>
+        <div class="col-md-3 cruiser7">
+          <img src="./img/portfolio/work8.jpg" class="img-fluid work-img">
+          <p id="j8">Giraffe restaurant rebranding</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -548,6 +626,7 @@
         <hr class="my-4">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         
         <script type='text/javascript'>'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[2] = 'MMERGE2'; ftypes[2] = 'text';}(jQuery)); var $mcj = jQuery.noConflict(true);</script>
         <script src="/js/TweenMax.min.js"></script>
@@ -561,7 +640,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
         <script src="js/Card-polygon-4.js"></script>
         <script src="js/delani-4.js"></script>
-        <script id="mcjs"></script>
+        <script src="/js/scripts.js"</script>
 </body>
 
 </html>

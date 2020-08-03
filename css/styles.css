@@ -1,10 +1,20 @@
 /*----google favorite font of choice----*/
 @import url(https://fonts.google.com/specimen/Charm?sidebar.open&selection.family=Charm:wght@700);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+.section4 {
+    background: whitesmoke;
+    height: auto;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+h4 {
+    color: #000;
+    text-align: center;
+    text-emphasis: bold;
 
 
-
-
-.contact{
+.contact {
     text-align: center;
 }
 .fun{
@@ -14,9 +24,18 @@
 .gif{
     max-width: 100%;
 }
+.section5 {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.img-fluid {
+    padding-bottom: 1rem;
+}
+
+
 .form {
     background-image: url("/img/backgrounds/c_image.jpg");
-    background-image: image("/img");
+padding: 20;
 }
 
 .social a{
@@ -48,6 +67,11 @@
     opacity: 0;
 }
 
+
+
+
+
+
 /* cards */
 
 *,
@@ -66,12 +90,23 @@
 .clearfix:after {
     clear: both;
 }
- body.body--hidden{
+ body {
+     font-family: Avenir, 'Helvetica Neue', Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     line-height: 1.5;
+     margin: 0;
+     color: #3b393d;
+     background-size: cover;
+     -webkit-font-smoothing:antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     overflow: hidden;
+     overflow-y: scroll;
+ }
+ body.body--hidden {
      overflow: hidden;
  }
 
  .hidden {
- possition: absolute;
+ position: absolute;
  overflow: hidden;
  width: 0;
  height: 0;
@@ -119,8 +154,9 @@
  .polygon {
      transition: -webkit-transform 300ms ease-in-out, opacity 300ms ease-in-out;
      transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-     -webkit-transform: sclae(1);
-     transform-origin; center bottom;
+     -webkit-transform: scale(1);
+     -webkit-transform-origin: center bottom;
+     transform-origin: center bottom;
  }
 
  .polygon--hidden{
@@ -167,17 +203,18 @@
      width: 100%;
      height: 100%;
  }
+
 .card_container--closed .card_image{
     position: relative;
     cursor: pointer;
 }
-.card_container--fix-image .card_image{
+.card_container--fix-image .card_image {
     position: fixed;
 
 }
 .card_content{
     position: relative;
-    width: 100;
+    width: 100%;
     max-width: 800px;
     height: auto;
     margin: 400px auto 60px;
@@ -199,11 +236,12 @@
     padding: 35px 30px 0px;
 }
 
-.card_container--closed .card_caption{
+.card_container--closed .card_caption {
     font-size: 1em;
-    max-width: auto;
+    max-width: 0 auto;
     padding: 10px 10px 25px;
     -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100);
     transform: translateY(-100%);
 
 }
@@ -231,11 +269,11 @@
     color: #f5f5f5'
 }
 
-.card_copy{
+.card_copy {
     font-size: 1.25em;
     max-width: 900px;
     margin: 0 auto;
-    padding: 25px 30px;
+    padding: 25px 30px 100px;
     color: #3b393d;
 }
 .card_copy p:first-of-type {
@@ -243,7 +281,7 @@
     padding: 0 0 1em 0;
     
 }
-.card_btn-close{
+.card_btn-close {
     font-size: 18px;
     position: absolute;
     top: 0;
@@ -259,7 +297,7 @@
     display: -webkit-flex;
     display: flex;
     padding: 0 0 35px 0;
-    -webkit-aligh-items: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -278,13 +316,13 @@
     }
     @media only screen and (max-width: 980px) {
         .card {
-            widht:46%;
-            padding-bottom:32.2%
+            width:46%;
+            padding-bottom: 32.2%;
         }
-        .card_content{
+        .card_content {
             margin-bottom: 0;
             padding-right: 20px;
-            padding-left; 20px;
+            padding-left: 20px;
         }
     }
 
@@ -294,13 +332,13 @@
         padding-bottom: 67.2%;
     }
 }
-        @media only screen and (max-width; 400px){
+@media only screen and (max-width; 400px){
             .card_caption{
                 font-size: 1.25em;
                 padding:  35px 0px 0px;
             }
         }
-        .meta{
+        .meta {
             padding: 0 0 25px 0;
         }
         .card_copy{
@@ -309,28 +347,28 @@
         }
     }
 
-    hi{
+    h1 {
         font-size: 2em;
         margin: 0.67em 0;
     }
-    img{
+    img {
         border: 0;
     }
     svg:not(:root) {
         overflow: hidden;
     }
 
-    figure{
+    figure { 
         margin: 0;
      }
 
-     fieldset{
+     fieldset {
          border: 1px solid #c0c0c0;
          margin: 0 2px;
          padding: 0.35em 0.625em 0,75em;
      }
 
-     legend{
+     legend {
          border: 0;
          padding: 0;
      }
@@ -350,7 +388,7 @@
          text-transform: none;
 
      }
-     button,html input[type="button"],
+     button, html input[type="button"],
      input[type="reset"],
      input[type="submit"] {
          -webkit-appearance: button;

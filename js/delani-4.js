@@ -6,7 +6,7 @@ var delani = (function(window, undefined){
       pattern: '.pattern',
       card: '.card',
       cardImage: '.card_image',
-      cardClose: '.card_btn-close',
+      cardClose: '.card_btn-close'
    };
    
    var CLASSES = {
@@ -24,20 +24,23 @@ var delani = (function(window, undefined){
 
    function init() {
 
-    var pattern =Trianglify({
+    var pattern = Trianglify({
       width: window.innerWidth,
       height: window.innerHeight,
-      call_size: 90; 
+      cell_size: 90,
       variance: 1,
       stroke_width: 1,
       x_colors: 'Purples' 
     }).svg();
 
-    _mapPolygons(pattern) {
+    _mapPolygons(pattern);
+    _bindCards();
+}; 
+        function_mapPolygons(pattern) {
 
         $(SELECTORS.pattern).append(pattern);
 
-        pollyonMap.paths = [].slice.call(pattern.childNodes);
+        polyonMap.paths = [].slice.call(pattern.childNodes);
 
         polygonMap.points = [];
 
@@ -49,7 +52,7 @@ var delani = (function(window, undefined){
 
             var point = {
                 x: rect.left + rect.width / 2,
-                y: rect.top + rect.height / 2,
+                y: rect.top + rect.height / 2
             };
             
             polygonMap.points.push(point);
@@ -78,8 +81,9 @@ var delani = (function(window, undefined){
             $(cardImage).on('click', _playSequence.bind(this, true, i));
             $(cardClose).on('click'), _playSequence.bind(this, false, i));
         });
+    };
 
-        function _playSequence(isOpenClick, id, e) {
+    function _playSequence(isOpenClick, id, e) {
 
             var card = layout[id].card;
            
@@ -122,7 +126,7 @@ var delani = (function(window, undefined){
 
         var selectedCard = layout[id].card;
 
-        for( var i in layout) {
+        for (var i in layout) {
 
             var card = layout[i].card;
 
@@ -146,6 +150,8 @@ function _setPatternBgImg(image){
 
 function _onCardMove(track) {
 
+    var radius = track.width / 2;
+
     var center = {
         x: track.x,
         y: track.y
@@ -161,6 +167,7 @@ function _onCardMove(track) {
 
         }
     });
+}
 
     function _detectPointInCircle(point,radius,center) {
 
@@ -173,7 +180,7 @@ function _onCardMove(track) {
 
         var d = radius * radius;
 
-        var isInside = Math.pow(xp -xc, 2) + Math.pow(yp-yc, 2) <= d;
+        var isInside = Math.pow(xp -xc, 2) + Math.pow(yp - yc, 2) <= d;
 
         return inInside;
 
@@ -183,9 +190,6 @@ function _onCardMove(track) {
         init: init
     };
 
-};(window); 
+})(window); 
 
-window.onload = delani.init;
-    }
-   }
-})
+window.onload = delani-4.init;

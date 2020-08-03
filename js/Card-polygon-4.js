@@ -1,12 +1,6 @@
 'use strict';
 
-var card = (function (window, undefined) {
-    var SELECTORD = {
-        container: '.card_container',
-        content: '.card_content',
-        clip: '.clip'
-
-    };
+var card = (function () {
     var CLASSES = {
         containerClosed: 'card_container--closed',
         bodyHidden: 'body--hidden'
@@ -33,7 +27,6 @@ var card = (function (window, undefined) {
         var slideContentDown = this._slideContentDown();
         var clipImageIn = this._clipImageIn();
         var floatContainer = this._floatContainer(callback);
-        var clipImageOut = this._clipImageOut();
         var slideContentUp = this._slideContentUp();
 
         this._TL.add(slideContentDown);
@@ -45,13 +38,8 @@ var card = (function (window, undefined) {
         return this._TL;
     };
 
-
-
     Card.prototype._slideContentDown = function () {
-        var tween = TweenLite.to(this._content, 0.8,), {
-            y: window,innerHeight,
-            ease: Expo,easeInOut
-        };
+        var tween = TweenLite.to(this._content, 0.8,);
 
 
         return tween;
@@ -66,14 +54,14 @@ var card = (function (window, undefined) {
             [0, 1200],
             [0, 0],
             [1920, 0],
-            [1920, 1200],
+            [1920, 1200]
         ];
 
         var end = [
             [916, 430],
             [1125, 643],
             [960, 607],
-            [793, 570],
+            [793, 570]
         ];
 
 
@@ -104,7 +92,7 @@ var card = (function (window, undefined) {
         return TL;
     };
 
-    Card.prototype._floatContainer = function (callback) {
+    Card.prototype._floatContainer = function () {
 
         $(document.body).addClass(CLASSES.bodyHidden);
 
@@ -113,11 +101,6 @@ var card = (function (window, undefined) {
         var rect = this._container.getBoundingClientRect();
         var window = window.innerWidth;
 
-        var track = {
-            width: 0,
-            x: rect.left + (rect.width / 2),
-            y: rect.top + (rect.height / 2),
-        };
 
         TL.set(this._container, {
             width: rect.width,
@@ -126,7 +109,7 @@ var card = (function (window, undefined) {
             y: rect.top,
             position: 'fixed',
             overflow: 'hidden'
-        });
+        )};
 
 
         TL.to([this._container, track], 2, {
@@ -140,7 +123,7 @@ var card = (function (window, undefined) {
             className: '-=' + CLASSES.containerClossed,
             onUpdate: callback.bind(this, track),
             onComplete: function () {
-                $(this.container).addClass('card_container--fix--image');
+                $(this._container).addClass('card_container--fix--image');
             }.bind(this)
 
         });
@@ -161,7 +144,7 @@ var card = (function (window, undefined) {
     };
 
 
-    Card.prototype._slideContentUp = function(){
+    Card.prototype._slideContentUp = function() {
 
         var tween = TweenLite.to(this._content, 1, {
           y: 0,
@@ -183,12 +166,10 @@ var card = (function (window, undefined) {
            onComplete: function(){
                $(this._container).css('overflow', 'hidden');
            }.bind(this),
-         ease, Power2,easeOut  
-    
+         ease: Power2.easeOut  
+    });
 
-   });
-
-    this._TL.eventCallBack('onReverseComplete', function(){
+    this._TL.eventCallBack('onReverseComplete', function() {
 
 
         TweenLite.set([this._container, this._content], {
@@ -211,10 +192,16 @@ var card = (function (window, undefined) {
     Card.prototype.hideCard = function() {
 
 
-        var tween = TweenLite.to(this._el, 0.4){
+        var  tween = TweenLite.to(this.el, 0.4, {
             scale: 0.8,
             autoAlpha: 0;
-            transformOrigin: 'center bottom',
+            _transformOrigin: 'center bottom',
+            get transformOrigin() {
+                return this._transformOrigin;
+            },
+            set transformOrigin(value) {
+                this._transformOrigin = value;
+            },
             ease: Expo.easeInOut
         });
 
@@ -239,7 +226,7 @@ var card = (function (window, undefined) {
     return card;
 
 
-})(window);
+}(window);
 
 
              
