@@ -1,6 +1,65 @@
-/*----google favorite font of choice----*/
-@import url(https://fonts.google.com/specimen/Charm?sidebar.open&selection.family=Charm:wght@700);
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: black;
+}
+.section1 {
+    text-align: center;
+    font-size-adjust: auto;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    background: url(./assets/backgrounds/h_img.jpg);
+    background-size: cover;
+    height: 680px;
+    padding: 2rem;
+}
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 100px;
+}
+.logo2 {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 100px;
+}
+.section2 {
+    background: whitesmoke;
+    height: 300px;
+    text-align: center;
+    font-size-adjust: auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-emphasis: bold;
+}
+.section3 {
+    height: 300px;
+    background: url(./assets/backgrounds/s_image.jpg);
+    color: white;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    text-emphasis: bold;
+}
+h3 {
+    text-emphasis: bold;
+}
+
+.fun{
+    width: 100%;
+    margin-bottom: 0rem;
+    
+}
+.gif{
+    max-width: 100%;
+}
 
 .section4 {
     background: whitesmoke;
@@ -12,17 +71,6 @@ h4 {
     color: #000;
     text-align: center;
     text-emphasis: bold;
-
-
-.contact {
-    text-align: center;
-}
-.fun{
-    width: 100%;
-    margin-bottom: 2rem;
-}
-.gif{
-    max-width: 100%;
 }
 .section5 {
     text-align: center;
@@ -31,42 +79,12 @@ h4 {
 .img-fluid {
     padding-bottom: 1rem;
 }
-
-
-.form {
-    background-image: url("/img/backgrounds/c_image.jpg");
-padding: 20;
+.section6 {
+    font-family: 'Fira Sans', sans-serif;
+    background: url(./assets/backgrounds/c_image.jpg);
+    color: white;
+    font-weight: 400;
 }
-
-.social a{
-    font-size: 3em;
-    padding: 1rem;
-}
-.col-12 social padding:hover, { 
-    color = #0453fgr;
-}
-.footer {
-    background-color: #f5f3f3;
-    color: #222121;
-    padding-top: .3rem;
-    text-align: center;
-}
-
-.content-before {
-    font-weight: 500;
-    line-height: 60px;
-    text-align: center;
-    color: #fff
-}
-
-.content-after {
-    display: none;
-    font-size: 14px;
-    text-align: left;
-    line-height: 16px;
-    opacity: 0;
-}
-
 #shown-design {
     display: none;
 }
@@ -76,7 +94,13 @@ padding: 20;
 #shown-product {
     display: none;
 }
-
+input[type=text],input[type=email],textarea[name=message] {
+    background-color: transparent;
+    font-weight: 600;
+}
+.section7 {
+    padding-left: 20%;
+}
 .work-img {
     position: relative;
 }
@@ -89,333 +113,10 @@ padding: 20;
     padding: 70px 0;
     display: none;
 }
-
-
-
-
-/* cards */
-
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.clearfix:before,
-.clearfix:after {
-    content: '';
-    display: table;
+.section8 {
+    text-align: center;
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: whitesmoke;
 }
 
-
-.clearfix:after {
-    clear: both;
-}
- body {
-     font-family: Avenir, 'Helvetica Neue', Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     line-height: 1.5;
-     margin: 0;
-     color: #3b393d;
-     background-size: cover;
-     -webkit-font-smoothing:antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     overflow: hidden;
-     overflow-y: scroll;
- }
- body.body--hidden {
-     overflow: hidden;
- }
-
- .hidden {
- position: absolute;
- overflow: hidden;
- width: 0;
- height: 0;
- pointer-events: none;
-
- }
-
- .content {
-     padding: 1em 0 4em;
- }
-
- .wrapper {
-     overflow: auto
-     width: 95%;
-     max-width: 1366px;
-     margin: 0 auto;
-
- }
-
- .pattern {
-     position: fixed;
-     z-index: -1;
-     top: 0,
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: no-repeat center center / cover;
- }
-
- .pattern--hidden {
-     visibility: hidden;
-     opacity: 0;
- }
-
-
- .pattern--hidden .polygon{
-     transition-duration: 0ms;
- }
-
- .pattern svg{
-     width: 100%;
-     height: 100%;
- }
-
- .polygon {
-     transition: -webkit-transform 300ms ease-in-out, opacity 300ms ease-in-out;
-     transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-     -webkit-transform: scale(1);
-     -webkit-transform-origin: center bottom;
-     transform-origin: center bottom;
- }
-
- .polygon--hidden{
-     opacity: o;
-     -webkit-transform: scale(0);
-     transform: scale(0);
- }
-
- .ff .polygon{
-     -webkit-transform: scale(1)!important;
-     transform: scale(1)!important;
- }
-
- .card {
-     position: relative;
-     float: left;
-     width: 21%;
-     height: 0;
-     margin: 0.5%;
-     padding-bottom: 20%;
- }
-
- .card_container {
-     position: fixed;
-     top: 0;
-     left: 5;
-     overflow-x: hidden;
-     overflow-y: auto;
-     width: 100%;
-     height: 100%;
-     -webkit-overflow-scrolling: touch;
- }
-
- .card_container--closed {
-     position: absolute;
-     overflow: hidden;
- }
-
- .card_image{
-     position: absolute;
-     top: 0;
-     left: 0;
-     display: block;
-     width: 100%;
-     height: 100%;
- }
-
-.card_container--closed .card_image{
-    position: relative;
-    cursor: pointer;
-}
-.card_container--fix-image .card_image {
-    position: fixed;
-
-}
-.card_content{
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 400px auto 60px;
-    padding: 30px 40px 22px;
-    background: #fff;
-}
-
-.card_container--closed .card_ content {
-    margin-top: 0;
-    padding:0 16px;
-    pointer-events: none;
-    background: transparent;
-}
-
-.card_caption{
-    font-size: 2em;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 35px 30px 0px;
-}
-
-.card_container--closed .card_caption {
-    font-size: 1em;
-    max-width: 0 auto;
-    padding: 10px 10px 25px;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100);
-    transform: translateY(-100%);
-
-}
-
-.card_title {
-    font-size: 1.5em;
-    line-height: 1;
-    margin: 5px 0 0 0;
-    color: #3b393d;
-
-}
-
-.card_container--closed .card_title{
-    color: #fff
-}
-.card_subtitle{
-    font-size: .95em;
-    line-height: 1;
-    margin: 5px 0 0;
-    color: #777778;
-
-}
-
-.card_container--closed .card_subtitle {
-    color: #f5f5f5'
-}
-
-.card_copy {
-    font-size: 1.25em;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 25px 30px 100px;
-    color: #3b393d;
-}
-.card_copy p:first-of-type {
-    font-size:  1.5em;
-    padding: 0 0 1em 0;
-    
-}
-.card_btn-close {
-    font-size: 18px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 36px;
-    cursor: pointer;
-}
-.card_container--closed .card_btn-close{
-    display: none;
-}
-.meta {
-    font-size:  .85em;
-    display: -webkit-flex;
-    display: flex;
-    padding: 0 0 35px 0;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.meta_avatar{
-    border-radius: 50%;
-    }
-
-    .meta_portfolio{
-        font-weight: bold;
-        padding: 0 15px;
-
-    }
-
-    .meta_date{
-        margin: 0 0 0 auto;
-    }
-    @media only screen and (max-width: 980px) {
-        .card {
-            width:46%;
-            padding-bottom: 32.2%;
-        }
-        .card_content {
-            margin-bottom: 0;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-    }
-
-@media only screen and (max-width: 580px) {
-    .card{
-        width: 96%;
-        padding-bottom: 67.2%;
-    }
-}
-@media only screen and (max-width; 400px){
-            .card_caption{
-                font-size: 1.25em;
-                padding:  35px 0px 0px;
-            }
-        }
-        .meta {
-            padding: 0 0 25px 0;
-        }
-        .card_copy{
-            font-size: 90%;
-            padding: 25px 0px 100px;
-        }
-    }
-
-    h1 {
-        font-size: 2em;
-        margin: 0.67em 0;
-    }
-    img {
-        border: 0;
-    }
-    svg:not(:root) {
-        overflow: hidden;
-    }
-
-    figure { 
-        margin: 0;
-     }
-
-     fieldset {
-         border: 1px solid #c0c0c0;
-         margin: 0 2px;
-         padding: 0.35em 0.625em 0,75em;
-     }
-
-     legend {
-         border: 0;
-         padding: 0;
-     }
-
-     button,input,select,textarea {
-         font-family: inherit;
-         font-size: 100%;
-         margin: 0;
-     }
-
-     button,input {
-         line-height: normal;
-
-     }
-
-     button,select {
-         text-transform: none;
-
-     }
-     button, html input[type="button"],
-     input[type="reset"],
-     input[type="submit"] {
-         -webkit-appearance: button;
-         cursor: pointer;
-     }
-     button[disable],
-     html input[disable]{
-        cursor: pointer;  
-     }

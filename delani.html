@@ -1,80 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Delani Studios</title>
-    </head>
-    <body>
-    <!--Navigation Bar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
-        <button class="navbar-toggle" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-        <span class="navbar-toggle-icon"></span>
-    </button> 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">WHAT WE DO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
-            </li>
-        </ul>
-    </div>       
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+      <script src="./js/scripts.js"></script>
+      <title>Delani studio</title>
+  </head>
+  <body>
+    <div class="section1">
+      <div class="logo"></div>
+      <img src="./assets/logo/logo.png" alt="a D sign logo">
+      </div>
+       <h1>WELCOME<br>TO DELANI STUDIO</h1>
+        <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
+    <div class="logo2">
+      <img src="./css/assets/mouse_click.png" alt="a click representing a mouse">
     </div>
-</nav>
-    <div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li> 
-    </ul>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/backgrounds/h_img.jpg">
-            <div class="carousel-caption">
-             <h1 class="display-2">WELCOME</h1> 
-             <h3>TO DELANI STUDIO</h3>
-             <button type="button" class="btn btn-outline-light btn-lg">VIEW INTRO</button>
-             <button type="button" class="btn btn-outline-light btn-lg">D STUDIO</button>
-            </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/backgrounds/h_img.jpg">
-        </div>
-        <div class="carousel-item">
-            <img src="img/backgrounds/s_image.jpg">
-        </div>
     </div>
-</div> 
-    <!--- Jumbotro -->
-        <div class="container-fluid">
-            <div class="row 
-            <div class="jumbotron">
-                <div class="container">
-    <!---- Welcome Section-->
+    <div class="section2">
+      <h2>ABOUT US </h2>
+      <P>When you work with us ,you are part of a team of committed collaborators. All aspects of our software development process are intergrated,interactive<br>and agile.<br>Our approach unifies design,development and product management to create exceptional products.<br>
+            We start each project by understanding your business goals ,the user's needs and the product requirments.<br>Then we help translate them into effective and elegant solutions.
+      </P>
+    </div>
+    <div class="section3">
+        <h3>SERVICES</h3>
+        <P>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision<br>The outcome of this scoping session is a proposal or high-level statement of work.<br>based on your requirments ,we can provide a complete offering or just the pieces you need.</P>
+      </div>
+      <div class="section4">
+        <h4>WHAT WE DO</h4>
+        <div class="whatwedo>">
+        <div class="row toggles">
+          <div class="col-md-4 design">
+            <div id="hidden-design">
+            <img class="toggle" src="./css/assets/services_icons/design_icon.png" alt="a design logo">
+            </div>
+            <h5>DESIGN</h5>
+            <p id="shown-design" class="toggle">
+              Our design practice offers a full range of services<br>including brand strategy,interaction and visual design<br>and user experience testing.<br>Throughout your project,our designers create and<br>implement visual design and workflows,solicit users<br>feedback and work with you to make sure what gets built<br>is what is needed.
+            </p>
+          </div>
+          <div class="col-md-4 development">
+            <div id="hidden-development">
+            <img class="toggle1" src="./css/assets/services_icons/dev_icon.png" alt="a development logo">
+            </div>
+            <h5>DEVELOPMENT</h5>
+            <p id="shown-development" class="toggle1">
+              All engineers are fluent in the latest enterprise ,mobile<br>and webdevelopment technologies.<br>They collaborate with your team to write and improve<br>code on a daily basis,using proven practices such as<br>test-driven development and pair programming.
+            </p>
+          </div>
+          <div class="col-md-4 product">
+            <div id="hidden-product">
+            <img class="toggle2" src="./css/assets/services_icons/product_icon.png" alt="a products icon">
+            </div>
+            <h5>PRODUCT MANAGEMENT</h5>
+            <p id="shown-product" class="toggle2">
+              Planning and development is iterative.Because we are<br>constantly coding and testing,the products we build are<br>constantly always ready to go live.<br>This iterative process allows for changes as businesses<br>requirments evolve.
+            </p>
+          </div>
+        </div>
+        <div class="section5">
+          <p>PORTFOLIO</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 cruiser">
+                <img src="./css/assets/portfolio/work4.jpg" class="img-fluid work-img"> 
+                <p id="g1">black lives matter project</p>
+              </div>
+              <div class="col-md-3 cruiser1">
+                <img src="./css/assets/portfolio/work3.jpg" class="img-fluid work-img">
+                <p id="g2">The mighty project</p>
+              </div>
+                <div class="col-md-3 cruiser2">
+                  <img src="./css/assets/portfolio/work2.jpg" class="img-fluid work-img ">
+                  <p id="g3">brown project</p>
+                </div>
+                <div class="col-md-3 cruiser3">
+                  <img src="./css/assets/portfolio/work1.jpg" class="img-fluid work-img">
+                  <p id="g4">Jim query project</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 cruiser4">
+                <img src="./css/assets/portfolio/work5.jpg" class="img-fluid work-img">
+                <p id="g5">Have a good day project</p>
+              </div>
+              <div class="col-md-3 cruiser5">
+                <img src="./css/assets/portfolio/work6.jpg" class="img-fluid work-img">
+                <p id="g6">grey project project</p>
+              </div>
+              <div class="col-md-3 cruiser6">
+                <img src="./css/assets/portfolio/work7.jpg" class="img-fluid work-img">
+                <p id="g7">Burned Out project</p>
+              </div>
+              <div class="col-md-3 cruiser7">
+                <img src="./css/assets/portfolio/work8.jpg" class="img-fluid work-img">
+                <p id="g8">Giraffe restaurant project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section6" id="contact">
+            
+          <h6>CONTACT US</h6> <br>
+            <div class="col-md-12">
+              <form>
+                <form action="https://gmail.us17.list-manage.com/subscribe/post?u=b350038deecfaeefe1d854237&amp;id=6d233bdbf9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                <div class="row">
+                  <div class="col-md-2"></div>
+              <input type="text" class="col-md-4 form-control name" name="name" placeholder="Name..." required> &nbsp; &nbsp;
+            <input type="email" class="col-md-4 form-control email" name="email" placeholder="Email..." required>
+            </div>
+            <br>
+          <div class="row">
+          <div class="col-md-2"></div>
+          <textarea class="form-control col-md-8 text" name="message" id="message" rows="12"></textarea>
+          <div class="col-md-2"></div>
+        <button class="btn btn-success mx-auto d-block submit" type="submit" onclick="">submit</button>
+          </form><br><br><br>
+        </div>
+          </div>    
+        </div>  
+        </div>
+        <div class="section7">
+          <div class="row">
+            <div class="col-md-2" id="social-icons"></div>
+            <img src="./css/assets/social_icons/twitter.png" class="img-fluid">
+            <img src="./css/assets/social_icons/dribble.png" class="img-fluid">
+            <img src="./css/assets/social_icons/facebook.png" class="img-fluid">
+            <img src="./css/assets/social_icons/g_plus.png" class="img-fluid">
+            <img src="./css/assets/social_icons/skype.png" class="img-fluid">
+            <img src="./css/assets/social_icons/stumble_upon.png" class="img-fluid">
+            <img src="./css/assets/social_icons/behance.png" class="img-fluid">
+            <img src="./css/assets/social_icons/pinterest.png" class="img-fluid">
+            <img src="./css/assets/social_icons/flickr.png" class="img-fluid">
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="section8">
+          <p>DELANI STUDIO<br>2019</p>
+        </div>
     </body>
-</html>
+  
