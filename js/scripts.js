@@ -1,4 +1,4 @@
-prompt("SOS! Type your name and Click Ok!");
+/*prompt("SOS! Type your name and Click Ok!");*/
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
