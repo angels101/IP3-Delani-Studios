@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
 
 body {
+    font-family: 'Courgette', cursive;
     padding: 0;
     margin: 0;
     height: auto;
@@ -10,7 +11,7 @@ body {
     text-align: center;
     font-size-adjust: auto;
     color: white;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Courgette', cursive;
     background: url(./assets/backgrounds/h_img.jpg);
     background-size: cover;
     height: 680px;
@@ -45,7 +46,7 @@ h1 {
     background: url(./assets/backgrounds/s_image.jpg);
     color: white;
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Courgette', cursive;
     text-emphasis: bold;
 }
 h3 {
@@ -55,7 +56,7 @@ h3 {
 .fun{
     width: 100%;
     margin-bottom: 0rem;
-    
+
 }
 .gif{
     max-width: 100%;
@@ -107,11 +108,13 @@ input[type=text],input[type=email],textarea[name=message] {
 #g1,#g2,#g3,#g4,#g5,#g6,#g7,#g8 {
     position: absolute;
     top: 0%;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(243, 211, 211, 0.6);
     width: 100%;
     height: 100%;
     padding: 70px 0;
     display: none;
+
+
 }
 .section8 {
     text-align: center;
