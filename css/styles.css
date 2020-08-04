@@ -79,10 +79,10 @@ h3 {
 
 .fun {
     width: 100%;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
 
 }
-#gifs {
+.gif {
     max-width: 100%;
 }
 
@@ -147,7 +147,15 @@ input[type=text],input[type=email],textarea[name=message] {
     background-color: whitesmoke;
 }
 
-#social-icons{
+.col-md-2{
     padding: 3rem;
 font-size: 4,5px;
+}
+.col-md-2 a {
+    font-size: 4.5rem;
+    padding: 3rem;
+
+}
+.twitter : hover, {
+    color: #d5d5d5;
 }
